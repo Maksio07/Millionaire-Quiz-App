@@ -1,0 +1,18 @@
+.progress__bar {
+	-webkit-appearance: none;
+	appearance: none;
+	width: 50%;
+	height: 2rem;
+}
+
+.progress__bar[value]::-webkit-progress-bar {
+	background-color: #1d5da5;
+	border-radius: 0.4rem;
+	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25) inset;
+}
+
+.progress__bar[value]::-webkit-progress-value {
+	background-color: #c6c2ece8;
+    border-radius: 0.4rem;
+	background-size: 35px 20px, 100% 100%, 100% 100%;
+}

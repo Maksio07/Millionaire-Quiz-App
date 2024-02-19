@@ -1,0 +1,155 @@
+.amounts {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	position: absolute;
+	top: 2rem;
+	left: 50%;
+	transform: translateX(-50%);
+	min-width: 26rem;
+	width: 40rem;
+	min-height: 53rem;
+	background-color: #4476b0;
+	background-image: linear-gradient(315deg, #4476b0 0%, #e0d2c7 74%);
+	border-radius: 0.6rem;
+	box-shadow: 2px 5px 8px #42434483;
+	z-index: 10;
+	animation: showAmount .4s;
+}
+
+.amounts__shadow {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100vw;
+	height: 100vh;
+	background-color: #00000094;
+}
+
+.amounts__title{
+	font-size: 1.8rem;
+}
+
+.amounts__ul {
+	margin: 1rem auto;
+	width: 100%;
+	height: 100%;
+	list-style: none;
+}
+
+.amounts__li {
+	margin-top: 0.5rem;
+	text-align: center;
+	font-size: 1.8rem;
+}
+
+.amounts__li__check__points {
+	margin-top: 0.5rem;
+	text-align: center;
+	font-size: 1.8rem;
+	font-weight: bold;
+}
+
+.win__amount {
+	margin-top: 0.5rem;
+	padding: 0.2rem 0.1rem;
+	text-align: center;
+	font-size: 1.8rem;
+	background-color: rgba(159, 236, 15, 0.932);
+	border-radius: 0.8rem;
+	animation: checkAmount 1.4s;
+}
+
+.amounts__btn {
+	margin: 1rem 0;
+	padding: 0.8rem 1.6rem;
+	font-size: 1.8rem;
+	text-transform: uppercase;
+	background-color: transparent;
+	border: 0.1rem solid rgba(110, 73, 168, 0.774);
+	border-radius: 0.6rem;
+	color: #272525;
+	cursor: pointer;
+	transition: color 0.4s, background-color 0.4s, border 0.4s;
+}
+
+.amounts__btn:hover {
+	color: #b8d1d6;
+	background-color: #36538634;
+	border: 1px solid #24265ea2;
+}
+
+@keyframes showAmount {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
+}
+
+/* @keyframes closeAmount {
+	from {
+		display: flex;
+		top: 2rem;
+	}
+	to {
+		display: none;
+		top: -55rem;
+	}
+} */
+
+@keyframes checkAmount {
+	from {
+		background-color: transparent;
+	}
+
+	to {
+		background-color: #c0e229de;
+	}
+}
+
+@media (max-width: 300px) {
+	.amounts {
+		margin: 1rem auto;
+		width: 24rem;
+		height: 75vh;
+	}
+
+	.amounts__ul {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+	}
+
+	.amounts__li {
+		margin-top: 0.4rem;
+		font-size: 1.6rem;
+	}
+}
+
+@media (min-width: 300px) {
+	.amounts {
+		margin: 1rem auto;
+		width: 28rem;
+		height: 75vh;
+	}
+
+	.amounts__ul {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+	}
+
+	.amounts__li {
+		margin-top: 0.5rem;
+		font-size: 1.8rem;
+	}
+}
+
+@media (min-width: 450px) {
+	.amounts {
+		padding: 2rem 4rem;
+		width: 40rem;
+	}
+}

@@ -1,0 +1,151 @@
+.quiz__answers {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	padding: 1rem 2rem;
+	margin-top: 2rem;
+	box-shadow: 2px 2px 8px rgba(28, 28, 29, 0.315);
+	border-radius: 0.6rem;
+	border: 1px solid rgb(70, 61, 85);
+}
+
+.quiz__answer {
+	text-align: center;
+	color: #92c9d6;
+	list-style: none;
+}
+
+.quiz__btn {
+	margin: 0.6rem 0.2rem;
+	padding: 1rem 1.6rem;
+	width: 50vw;
+	max-width: 80rem;
+	border-radius: 0.6rem;
+	background-color: #1d2951;
+	background-image: linear-gradient(315deg, #1d2951 0%, #dbe7fc 74%);
+	color: rgb(46, 45, 42);
+	border: none;
+	font-size: 1.8rem;
+	cursor: pointer;
+	transition: background-color 0.5s, background-image 0.5s;
+}
+
+.quiz__btn:hover {
+	background-color: #091336;
+	background-image: linear-gradient(315deg, #091436 0%, #b3b6bb 74%);
+}
+
+.quiz__btn:disabled {
+	cursor: auto;
+	background-color: #1d2951bd;
+	background-image: linear-gradient(315deg, #1d2951bd 0%, #dbe7fc75 74%);
+}
+
+.clicked {
+	margin: 0.6rem 0.2rem;
+	padding: 1rem 1.6rem;
+	width: 50vw;
+	max-width: 80rem;
+	border-radius: 0.6rem;
+	background-image: none;
+	background-color: #dadd27;
+	box-shadow: 4px 4px 8px rgba(224, 228, 9, 0.527);
+	animation: waiting 2s;
+	color: rgb(44, 43, 43);
+	border: none;
+	font-size: 1.8rem;
+	cursor: pointer;
+	transition: background-color 0.5s, background-image 0.5s;
+}
+
+.correct {
+	margin: 0.6rem 0.2rem;
+	padding: 1rem 1.6rem;
+	width: 50vw;
+	max-width: 80rem;
+	border-radius: 0.6rem;
+	background-image: none;
+	animation: waiting 2s;
+	background-color: rgb(124, 252, 0);
+	border: 1px solid rgb(70, 226, 70);
+	box-shadow: 4px 4px 8px rgba(124, 252, 0, 0.4);
+	color: rgb(44, 43, 43);
+	font-size: 1.8rem;
+	cursor: pointer;
+	transition: background-color 0.5s, background-image 0.5s;
+}
+
+.wrong {
+	margin: 0.6rem 0.2rem;
+	padding: 1rem 1.6rem;
+	width: 50vw;
+	max-width: 80rem;
+	border-radius: 0.6rem;
+	background-image: none;
+	animation: waiting 2s;
+	background-color: rgb(255,8,0);
+	border: 1px solid rgb(201, 15, 8);
+	box-shadow: 4px 4px 8px rgba(201, 14, 8, 0.4);
+	color: rgb(219, 206, 206);
+	font-size: 1.8rem;
+	cursor: pointer;
+	transition: background-color 0.5s, background-image 0.5s;
+}
+
+@keyframes waiting {
+	0% {
+		background-color: #1d2951;
+		background-image: linear-gradient(315deg, #1d2951 0%, #dbe7fc 74%);
+	}
+	20% {
+		background-image: none;
+		background-color: #edf03d;
+	}
+	40% {
+		background-color: #1d2951;
+		background-image: linear-gradient(315deg, #1d2951 0%, #dbe7fc 74%);
+	}
+	60% {
+		background-image: none;
+		background-color: #edf03d;
+	}
+	80% {
+		background-color: #1d2951;
+		background-image: linear-gradient(315deg, #1d2951 0%, #dbe7fc 74%);
+	}
+	100% {
+		background-image: none;
+		background-color: #edf03d;
+	}
+}
+
+@media (max-width: 300px) {
+	.quiz__btn,
+	.correct,
+	.wrong,
+	.clicked {
+		width: 75vw;
+		font-size: 1.4rem;
+	}
+}
+
+@media (min-width: 300px) {
+	.quiz__btn,
+	.correct,
+	.wrong,
+	.clicked {
+		width: 70vw;
+		font-size: 1.4rem;
+	}
+}
+
+@media (min-width: 512px) {
+	.quiz__btn,
+	.correct,
+	.wrong,
+	.clicked {
+		width: 65vw;
+		font-size: 1.8rem;
+	}
+}

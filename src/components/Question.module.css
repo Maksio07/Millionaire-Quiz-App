@@ -1,0 +1,39 @@
+.questions{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.questions__logo {
+	margin-bottom: 2rem;
+	width: 15rem;
+	height: 15rem;
+	background-position: center;
+	background-size: cover;
+}
+
+.questions__question {
+	margin-bottom: 2rem;
+	padding: 1rem 2rem;
+	font-size: 2.8rem;
+	text-align: center;
+	color: #dcf2f1;
+}
+
+@media (max-width: 300px) {
+    .quiz__question{
+        font-size: 1.8rem;
+    }
+}
+
+@media (min-width: 300px) {
+    .quiz__question{
+        font-size: 2.2rem;
+    }
+}
+
+@media (min-width: 512px) {
+    .quiz__question{
+        font-size: 2.8rem;
+    }
+}
