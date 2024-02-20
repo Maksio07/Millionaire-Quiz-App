@@ -1,10 +1,10 @@
 import { useState } from 'react'
 import logoImg from '../assets/milionaire-logo.png'
 import AMOUNTS from '../util/amounts-to-win.js'
-import Quiz from './Quiz'
-import Button from '../UI/Button'
+import Quiz from '../components/quiz/Quiz.jsx'
+import Button from '../UI/Button.jsx'
+import Gratulation from './amounts/Gralulation.jsx'
 import classes from './Summary.module.css'
-import amountsToWin from '../util/amounts-to-win.js'
 
 export default function Summary({ activeIndex }) {
 	const [restartIsClicked, setRestartIsClicked] = useState(false)
@@ -30,7 +30,7 @@ export default function Summary({ activeIndex }) {
 		activeIndex - 2 >= AMOUNTS.map(amount => amount.amount).indexOf('50 000')
 	) {
 		moneyToWin = '50 000'
-	} else if (activeIndex >= 14){
+	} else if (activeIndex >= 14) {
 		moneyToWin = '1 000 000'
 	}
 
@@ -41,7 +41,7 @@ export default function Summary({ activeIndex }) {
 			<h3 className={classes.summary__title_2}>Wygrałeś(-aś) {moneyToWin} złotych</h3>
 			<p className={classes.summary__text}>Kliknij 'Restart' aby zacząć od nowa </p>
 			<Button onClick={handleRestartClick}>Restart</Button>
+			{moneyToWin === '1 000 000' ? <Gratulation moneyToWin={moneyToWin} /> : ''}
 		</div>
 	)
 }
-

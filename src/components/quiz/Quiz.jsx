@@ -1,10 +1,9 @@
-import { useState, useRef } from 'react'
-import QUESTIONS from '../questions.js'
-import AMOUNTS from '../util/amounts-to-win.js'
+import { useState } from 'react'
+import QUESTIONS from '../../questions.js'
 import Question from './Question.jsx'
-import Summary from './Summary.jsx'
-import AmountToWin from './AmountToWin.jsx'
-import classes from '../components/Quiz.module.css'
+import Summary from '../Summary.jsx'
+import AmountToWin from '../amounts/AmountToWin.jsx'
+import classes from '../quiz/Quiz.module.css'
 
 export default function Quiz() {
 	const [userAnswers, setUserAnswers] = useState([])

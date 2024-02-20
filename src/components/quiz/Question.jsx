@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import Answers from './Answers.jsx'
-import QUESTIONS from '../questions.js'
-import logoImg from '../assets/milionaire-logo.png'
+import QUESTIONS from '../../questions.js'
+import logoImg from '../../assets/milionaire-logo.png'
 import classes from './Question.module.css'
 
 export default function Question({ index, onHandleUserAnswers }) {

@@ -1,7 +1,7 @@
 import { useRef } from 'react'
-import AMOUNTS from '../util/amounts-to-win.js'
-import Button from '../UI/Button.jsx'
-import classes from '../components/AmountToWin.module.css'
+import AMOUNTS from '../../util/amounts-to-win.js'
+import Button from '../../UI/Button.jsx'
+import classes from '../amounts/AmountToWin.module.css'
 
 export default function AmountToWin({ buttonCaption, activeIndex }) {
 	const amounts = useRef()
@@ -28,16 +28,12 @@ export default function AmountToWin({ buttonCaption, activeIndex }) {
 
 						if (AMOUNTS[activeIndex - 1] === amount) {
 							winAmountStyle = classes.win__amount
-						} else if (
-							amount.amount === '500' ||
-							amount.amount === '50 000' ||
-							amount.amount === '1 000 000'
-						) {
+						} else if (amount.amount === '500' || amount.amount === '50 000' || amount.amount === '1 000 000') {
 							winAmountStyle = classes.amounts__li__check__points
 						}
 
 						return (
-							<li  key={amount.id} className={winAmountStyle}>
+							<li key={amount.id} className={winAmountStyle}>
 								{amount.amount}
 							</li>
 						)

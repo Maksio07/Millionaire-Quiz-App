@@ -1,0 +1,41 @@
+.gratulation {
+	position: relative;
+	width: 100%;
+	min-height: 100%;
+}
+
+.gratulation__left,
+.gratulation__right,
+.gratulation__middle {
+	position: absolute;
+	bottom: .3rem;
+    border-radius: 50%;
+	opacity: 0;
+	animation: showGratulations 1.4s infinite;
+}
+
+.gratulation__left {
+	left: 2rem;
+}
+
+.gratulation__middle {
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.gratulation__right {
+	right: 2rem;
+}
+
+@keyframes showGratulations {
+	from {
+        bottom: 0;
+		opacity: 0;
+	}
+
+	to {
+		bottom: 35rem;
+		opacity: 1;
+        transform: scale(6.4);
+	}
+}

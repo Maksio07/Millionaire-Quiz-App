@@ -1,6 +1,6 @@
 import { useState } from 'react'
-import Header from './components/Header.jsx'
-import Quiz from './components/Quiz.jsx'
+import Header from './components/header/Header.jsx'
+import Quiz from './components/quiz/Quiz.jsx'
 import './App.css'
 
 function App() {
