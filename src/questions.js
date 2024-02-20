@@ -159,88 +159,119 @@ export default [
         text: 'Kto napisał Sto lat samotności?',
         answers: ['Gabriel Garcia Marquez', 'Stephen King', 'Remigiusz Mróz', 'Ernest Hemingway']
     },
+    {
+        id: 'q33',
+        text: 'Kto był autorem teorii pochodzenia gatunków?',
+        answers: ['Karol Darwin', 'Isaak Newton', 'Robert Koch', 'Ludwik Pasteur']
+    },
+    {
+        id: 'q34',
+        text: 'Jaki neuroprzekaźnik jest znany jako cząsteczka szczęścia?',
+        answers: ['Serotonina', 'Dopamina', 'Tauryna', 'Agmatyna']
+    },
+    {
+        id: 'q35',
+        text: 'Jaki jest chemiczny symbol złota?',
+        answers: ['Au', 'Ag', 'Ca', 'H']
+    },
+    {
+        id: 'q36',
+        text: 'Który artysta sprawił, że piosenka Billie Jean stała się popularna?',
+        answers: ['Michael Jackson', 'Eminem', 'Snoop Dog', 'Elvis Presley']
+    },
+    {
+        id: 'q37',
+        text: 'W której książce pojawia się Kot z Cheshire?',
+        answers: ['Alicja w Krainie Czarów', 'Wiedźmin', 'Kot w butach', 'Śnieżna Królowa']
+    },
+    {
+        id: 'q38',
+        text: 'Jaka jest stolica Islandii?',
+        answers: ['Reykjavik', 'Kopenhaga', 'Oslo', 'Kapsztad']
+    },
+    {
+        id: 'q39',
+        text: 'Ile klawiszy ma fortepian?',
+        answers: ['88', '73', '68', '102']
+    },
+    {
+        id: 'q40',
+        text: 'Co odkryli Maria Skłodowska-Curie i jej mąż Pierre?',
+        answers: ['Radioaktywność', 'Parowanie', 'Amerykę', 'Prąd']
+    },
+    {
+        id: 'q41',
+        text: 'Kto sformułował filozoficzną metaforę mitu o jaskini?',
+        answers: ['Platon', 'Arystoteles', 'Archimedes', 'Cyceron']
+    },
+    {
+        id: 'q42',
+        text: 'Co to jest syndrom Aleksandrii?',
+        answers: ['Stan,  w którym osoba nabiera fioletowego lub purpurowego odcienia oczu', 'Fobia wizyty Aleksandrii', 'Choroba cara Aleksandra Wielkiego', 'Stan psychiczny, który pojawia się u ofiar porwania lub u zakładników']
+    },
+    {
+        id: 'q43',
+        text: 'Czym są pliki cookie w świecie informatyki?',
+        answers: ['To pliki tworzone przez odwiedzane przez nas strony internetowe', 'Pliki w formacie .pdf', 'Pliki zawierające spis odwołań do innych plików', 'Pliki z wirusami']
+    },
+    {
+        id: 'q44',
+        text: 'Jak miała na imię żona Ulissesa, bohatera Odysei stworzonej przez Homera?',
+        answers: ['Penelopa', 'Pompeja', 'Kasandra', 'Helena']
+    },
+    {
+        id: 'q45',
+        text: 'W którym roku Krzysztof Kolumb przybył do Ameryki?',
+        answers: ['1492', '1670', '1812', '1451']
+    },
+    {
+        id: 'q46',
+        text: 'Z jakiego kraju pochodzi koktajl mojito?',
+        answers: ['Kuba', 'Japonia', 'Jamajka', 'Włochy']
+    },
+    {
+        id: 'q47',
+        text: 'Jaki ruch wykonuje skoczek w szachach?',
+        answers: ['Ruch podobny do kształtu litery „L”', 'Ruch jednej klatki w różne strony', 'Ruch wszystkich klatek w różne strony', 'Ruch jednej klatki do przodu']
+    },
+    {
+        id: 'q48',
+        text: 'Co to jest liczba pierwsza?',
+        answers: ['Liczba naturalna większa od jedynki, którą można podzielić tylko przez dwie liczby: jedynkę i samą siebie', 'Inaczej jedynka', 'Zero', 'Pierwsa liczba, którą można podzielić przez 0']
+    },
+    {
+        id: 'q49',
+        text: 'Jaki jest największy kraj na świecie?',
+        answers: ['Rosja', 'Stany Zjednoczone', 'Chiny', 'Brazylia']
+    },
+    {
+        id: 'q50',
+        text: 'Czym była Pangea?',
+        answers: ['Ogromny superkontynent', 'Rodzaj dinozaura', 'Starożytna cywilizacja', 'Ocean']
+    },
+    {
+        id: 'q51',
+        text: 'W jakim kraju znajduje się pustynia Atakama?',
+        answers: ['Chile', 'Stany Zjednoczone', 'Afganistan', 'Iran']
+    },
+    {
+        id: 'q52',
+        text: 'Kto jest najlepiej sprzedającym się artystą solowym wszechczasów?',
+        answers: ['Elvis Presley', 'Michael Jackson', 'Justin Timberlake', 'Enrique Iglesias']
+    },
+    {
+        id: 'q53',
+        text: 'Jak nazywało się więzienie, w którym przetrzymywany był hrabia Monte Christo z powieści Aleksandra Dumasa?',
+        answers: ["Zamek d'If", "Zamek de'Copato", "Zamek p'If", 'Zamek Capello']
+    },
+    {
+        id: 'q54',
+        text: 'Jak długo trwa mecz piłki nożnej?',
+        answers: ['90 minut', '45 minut', '60 minut', '120 minut']
+    },
 ]
 
 
-// 34. Zestaw pytań i odpowiedzi – kto był autorem teorii pochodzenia gatunków?
-// Słynny angielski przyrodnik Karol Darwin.
-
-// 35. Jaki neuroprzekaźnik jest znany jako cząsteczka szczęścia?
-// Serotonina.
-
-// 36. Zestaw pytań i odpowiedzi – jaki jest chemiczny symbol złota?
-// AU.
-
-// 37. Który artysta sprawił, że piosenka Billie Jean stała się popularna?
-// Michaela Jacksona.
-
-// 38. Zestaw pytań i odpowiedzi – w której książce pojawia się Kot z Cheshire?
-// Kot z Cheshire to postać stworzona przez Lewisa Carrolla. Pojawia się zarówno w Alicji w Krainie Czarów, jak i Alicji po drugiej stronie lustra.
-
-// REKLAMA
-
-// 39. Zestaw pytań i odpowiedzi – jaka jest stolica Islandii?
-// Reykjavik.
-
-// 40. Gdzie znajdował się mur Hadriana i jaki był jego cel?
-// Mur Hadriana był starą budowlą obronną zbudowaną w latach 122-132 na polecenie cesarza rzymskiego Hadriana. Jego celem była obrona Wielkiej Brytanii przed atakami plemion Piktów.
-
-// 50. Ile klawiszy ma fortepian?
-// Nowoczesne pianina mają 88 klawiszy, 36 czarnych i 52 białych.
-
-// 51. Co odkryli Maria Skłodowska-Curie i jej mąż Pierre?
-// Radioaktywność.
-
-// 52. Zestaw pytań i odpowiedzi – kto sformułował filozoficzną metaforę mitu o jaskini?
-// Platon.
-
-// 53. Kto napisał książkę Inteligencja emocjonalna ?
-// Daniel Goleman.
-
-// 54. Zestaw pytań i odpowiedzi – co to jest syndrom Aleksandrii?
-// Zespół Aleksandrii to dziwny stan, w którym osoba nabiera fioletowego lub purpurowego odcienia oczu.
-
-// REKLAMA
-
-// 55. Czym są pliki cookie w świecie informatyki?
-// Pliki cookie to pliki tworzone przez odwiedzane przez nas strony internetowe. Algorytmy te zapisują informacje z naszej historii przeglądania, aby ułatwić korzystanie z Internetu.
-
-// 56. Jak miała na imię żona Ulissesa, bohatera Odysei stworzonej przez Homera?
-// Penelopa.
-
-// 57. W którym roku Krzysztof Kolumb przybył do Ameryki?
-// 1492.
-
-// 59. Zestaw pytań i odpowiedzi – z jakiego kraju pochodzi koktajl mojito?
-// Kuba.
-
-// 60. Jaki ruch wykonuje skoczek w szachach?
-// Wykonuje ruch podobny do kształtu litery „L”.
-
-// 61. Zestaw pytań i odpowiedzi – co to jest liczba pierwsza?
-// Liczba naturalna większa od jedynki, którą można podzielić tylko przez dwie liczby: jedynkę i samą siebie.
-
-// REKLAMA
-
-// 62. Jaki jest największy kraj na świecie?
-// Rosja, o powierzchni 17 075 200 km².
-
-// 63. Zestaw pytań i odpowiedzi – czym była Pangea?
-// Ogromny superkontynent, który istniał pod koniec ery paleozoicznej i na początku ery mezozoicznej. Zawierała wiele krajów naszej planety.
-
-// 64. Zestaw pytań i odpowiedzi – w jakim kraju znajduje się pustynia Atakama?
-// Chile.
-
-// 65. Kto jest najlepiej sprzedającym się artystą solowym wszechczasów?
-// Elvis Presley.
-
-// Elvis Presley - zestaw pytań i odpowiedzi
-
-// 66. Jak nazywało się więzienie, w którym przetrzymywany był hrabia Monte Christo z powieści Aleksandra Dumasa?
-// Zamek d’If.
-
-// 67. Jak długo trwa mecz piłki nożnej?
-// Mecz piłki nożnej trwa 90 minut. Podzielony jest na dwie części po 45 minut każda.
 
 // 68. Która aktorka grała księżniczkę Leię w Gwiezdnych wojnach ?
 // Carrie Fisher.
