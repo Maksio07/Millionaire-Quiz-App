@@ -17,7 +17,7 @@ export default [
     {
         id: 'q4',
         text: 'Jaki jest narodowy kwiat Japonii?',
-        answers: ['Chryzantema', 'Róza', 'Wiśnia', 'Tulipan']
+        answers: ['Wiśnia', 'Chryzantema', 'Róza', 'Tulipan']
     },
     {
         id: 'q5',
