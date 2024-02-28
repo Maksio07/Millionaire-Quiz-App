@@ -1,6 +1,8 @@
-import { useState } from 'react'
+import { useState, useContext } from 'react'
+import { HintsContext } from '../../store/HintsContext'
 import Answers from './Answers.jsx'
 import QUESTIONS from '../../questions.js'
+import Hints from './Hints.jsx'
 import logoImg from '../../assets/milionaire-logo.png'
 import classes from './Question.module.css'
 
@@ -9,6 +11,8 @@ export default function Question({ index, onHandleUserAnswers }) {
 		selectedAnswer: '',
 		isCorrect: null,
 	})
+
+	const hintsCtx = useContext(HintsContext)
 
 	function handleAnswerState(answer) {
 		setAnswerState({
@@ -40,11 +44,13 @@ export default function Question({ index, onHandleUserAnswers }) {
 		<div className={classes.questions}>
 			<img src={logoImg} alt='Logo do gry milionerzy' className={classes.questions__logo} />
 			<h2 className={classes.questions__question}>{QUESTIONS[index].text}</h2>
+			<Hints filterAnswers={hintsCtx.filterAnswers} fiftyPercent={hintsCtx.fiftyPercent}/>
 			<Answers
 				answers={QUESTIONS[index].answers}
 				onSelect={handleAnswerState}
 				answersData={answerData}
 				selectedAnswer={answerState.selectedAnswer}
+				fiftyPercIsClicked={hintsCtx.fiftyPercent}
 			/>
 		</div>
 	)

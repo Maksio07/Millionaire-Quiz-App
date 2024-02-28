@@ -42,7 +42,7 @@ export default function Quiz() {
 			) : (
 				''
 			)}
-			<Question key={shuffledQuestionsIndex} index={shuffledQuestionsIndex} onHandleUserAnswers={handleUserAnswers} />
+			<Question key={shuffledQuestionsIndex} index={shuffledQuestionsIndex} onHandleUserAnswers={handleUserAnswers}/>
 		</div>
 	)
 }

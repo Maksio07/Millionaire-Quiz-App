@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import Header from './components/header/Header.jsx'
 import Quiz from './components/quiz/Quiz.jsx'
+import HintsContextProvider from './store/HintsContext.jsx'
 import './App.css'
 
 function App() {
@@ -11,7 +12,7 @@ function App() {
 	}
 
 	return (
-		<>
+		<HintsContextProvider>
 			{startIsClicked ? (
 				<main>
 					<Quiz />
@@ -19,7 +20,7 @@ function App() {
 			) : (
 				<Header onStartClicked={handleStartClick} />
 			)}
-		</>
+		</HintsContextProvider>
 	)
 }
 

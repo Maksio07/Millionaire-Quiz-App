@@ -1,0 +1,33 @@
+.hints{
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 1rem;
+    width: 24rem;
+}
+
+.hint__fifty__percents,
+.hint__phone,
+.hint__chart {
+    padding: .3rem .6rem;
+    background-color: transparent;
+    filter: drop-shadow(0 0 8px rgba(220, 242, 241, 0.63));
+    border-radius: .6rem;
+    color: #dcf2f1;
+    border: .1rem solid rgba(101, 94, 114, 0.795);
+    cursor: pointer;
+    transition: background-color .3s;
+}
+
+.hint__fifty__percents:hover,
+.hint__phone:hover,
+.hint__chart:hover {
+    background-color: #7f5a8386;
+}
+
+.hint__fifty__percents:disabled {
+    background-color: #b3aeae6e;
+    filter: none;
+    cursor: auto;
+}
+
+
